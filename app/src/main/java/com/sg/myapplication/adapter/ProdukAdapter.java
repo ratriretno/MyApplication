@@ -1,6 +1,7 @@
 package com.sg.myapplication.adapter;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +32,9 @@ public class ProdukAdapter extends  ListAdapter<ProdukModel, ProdukAdapter.Produ
     @Override
     public void onBindViewHolder(ProdukHolder holder, final int position) {
         System.out.println("on bind holder");
-
+        ProdukModel model = get(position);
+        holder.tvNama.setText(model.getNama());
+        Log.d("produk", model.getNama());
     }
 
     public class ProdukHolder extends  RecyclerView.ViewHolder {

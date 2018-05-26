@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 
 import com.sg.myapplication.adapter.ProdukAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 ProdukAdapter adapter;
     @Override
@@ -25,6 +28,16 @@ ProdukAdapter adapter;
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
+
+        List<ProdukModel> listProduk = new ArrayList<>();
+        ProdukModel produkModel = new ProdukModel();
+        produkModel.setNama("Buku");
+
+        for (int i = 0; i<8; i++){
+            listProduk.add(produkModel);
+        }
+
+        adapter.add(listProduk);
 
 
 
