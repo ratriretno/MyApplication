@@ -30,6 +30,7 @@ ProdukAdapter adapter;
         recyclerView.setAdapter(adapter);
 
         List<ProdukModel> listProduk = new ArrayList<>();
+
         ProdukModel produkModel = new ProdukModel();
         produkModel.setNama("Buku");
 

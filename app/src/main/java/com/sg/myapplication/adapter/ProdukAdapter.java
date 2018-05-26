@@ -34,7 +34,7 @@ public class ProdukAdapter extends  ListAdapter<ProdukModel, ProdukAdapter.Produ
         System.out.println("on bind holder");
         ProdukModel model = get(position);
         holder.tvNama.setText(model.getNama());
-        Log.d("produk", model.getNama());
+
     }
 
     public class ProdukHolder extends  RecyclerView.ViewHolder {
