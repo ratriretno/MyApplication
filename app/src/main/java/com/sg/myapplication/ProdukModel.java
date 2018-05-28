@@ -7,6 +7,16 @@ package com.sg.myapplication;
 public class ProdukModel{
     String nama;
 
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
+    }
+
+    String harga;
+
     public String getNama() {
         return nama;
     }

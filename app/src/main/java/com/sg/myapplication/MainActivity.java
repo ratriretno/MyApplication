@@ -33,6 +33,7 @@ ProdukAdapter adapter;
 
         ProdukModel produkModel = new ProdukModel();
         produkModel.setNama("Buku");
+        produkModel.setHarga("Rp 10.000");
 
         for (int i = 0; i<8; i++){
             listProduk.add(produkModel);

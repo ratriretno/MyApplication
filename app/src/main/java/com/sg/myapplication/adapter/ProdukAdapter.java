@@ -34,14 +34,16 @@ public class ProdukAdapter extends  ListAdapter<ProdukModel, ProdukAdapter.Produ
         System.out.println("on bind holder");
         ProdukModel model = get(position);
         holder.tvNama.setText(model.getNama());
+        holder.tvHarga.setText(model.getHarga());
 
     }
 
     public class ProdukHolder extends  RecyclerView.ViewHolder {
-       public TextView tvNama;
+       public TextView tvNama, tvHarga;
         public ProdukHolder(View itemView) {
             super(itemView);
             tvNama = (TextView) itemView.findViewById(R.id.tv_nama_produk);
+            tvHarga = (TextView) itemView.findViewById(R.id.tv_harga);
         }
 
         public ProdukHolder (ViewGroup parrent) {
